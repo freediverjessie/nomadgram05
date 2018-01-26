@@ -1,0 +1,90 @@
+.large__container {
+  border: 1px solid #efefef;
+  max-width: 740px;
+}
+
+.photo img[title="avatar"] {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+  animation: photo 1s ease-out infinite;
+}
+
+@keyframes photo {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(5turn);
+  }
+}
+
+.photo .photo__header {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  align-items: center;
+}
+
+.photo__user,
+.photo__username {
+  display: block;
+}
+
+.photo__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+  border-bottom: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+  border-left: 1px solid #efefef;
+}
+
+@keyframes play {
+  from 0%
+    transform: translate;
+  }
+  to { 
+    transform: translateY();
+  }
+}
+
+.photo__action {
+  padding: 15px 15px;
+  animation: play is ease-out infinite;
+}
+
+.comment .comment_list {
+  padding: 4px 0;
+}
+
+.datas textarea {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  width: 95%;
+}
+
+.comment__column {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  border-bottom: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+  border-left: 1px solid #efefef;
+}
+
+.list img:active,
+.list img:focus {
+  width: 500px;
+  height: 500px;
+}
+
+.list img {
+  transition: all is;
+}

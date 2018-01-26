@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Feed| Thaigram</title>
 
@@ -13,9 +14,9 @@
 <body>
 
     <header class="header">
-        <div class="header_logo">
+        <div class="header__logo">
             <a href="feed.html">
-                <img src="images/logo.png" alt="logo" title="logo">
+                <img src="images/logo.png" alt="logo" title="logo" class="logo__insta">
             </a>
 
         </div>
@@ -43,41 +44,48 @@
         </nav>
     </header>
 
-    <main>feed</main>
     <main class="feed">
-        <div class="photo">
-            <header class="photo__header">
-                <img src="images/avatar.png" alt="avatar" title="avatar">
-                <span class="photo__header">whatever</span>
+        <div class="large__container">
+            <div class="photo">
+                <header class="photo__header">
+                    <img src="images/avatar.png" alt="avatar" title="avatar">
+                    <span class="photo__user">Chiangmai Nomad</span>
+                    <span class="photo__username">Diver Sen</span>
+            </div>
             </header>
         </div>
         <div class="list">
             <img src="images/omg.png" alt="omg" title="omg">
-            <div class="header_icon">
-                <span>
-                    <i class="fa fa-heart" aria-hidden="true"></i>
-                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+            <div class="photo__meta">
+                <div class="photo__actions">
+                    <span class="photo__action">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </span>
+                    <span class="photo__action">
+                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <span class="photo__action">
+                    <i class="fa fa-bookmark-o" aria-hidden="true"></i>
                 </span>
             </div>
-            <div class="header_icon">
-                <i class="fa fa-bookmark-o" aria-hidden="true"></i>
-            </div>
-            <div class="views">
+            <div class="comment__column">
                 <span>14,4990 views</span>
-            </div>
-            <ul class="comment">
-                <li class="comment_list">
-                    <span>comment1</span>
-                </li>
-                <li class="comment_list">
-                    <span>comment2</span>
-                </li>
-            </ul>
-            <div class="dates">
+                <ul class="comment">
+                    <li class="comment_list">
+                        <span>comment1</span>
+                    </li>
+                    <li class="comment_list">
+                        <span>comment2</span>
+                    </li>
+                </ul>
+
                 <span>2DAYS AGO</span>
                 <textarea name="comment" id="for comments" cols="30" rows="3" placeholder="Add a comment..."></textarea>
                 <i class="fa fa-ellipsis-h"></i>
             </div>
+        </div>
+        </div>
     </main>
 
 

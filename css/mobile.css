@@ -1,0 +1,19 @@
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  .footer {
+    width: 95%;
+  }
+
+  .footer,
+  .footer__navigation .footer__link {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .login__column:first-child {
+    display: none;
+  }
+
+  .login__column {
+    width: 100%;
+  }
+}
