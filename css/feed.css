@@ -8,7 +8,6 @@
   height: 30px;
   margin-right: 10px;
   border-radius: 50%;
-  animation: photo 1s ease-out infinite;
 }
 
 @keyframes photo {
@@ -27,8 +26,7 @@
   align-items: center;
 }
 
-.photo__user,
-.photo__username {
+.user__infor {
   display: block;
 }
 
@@ -42,18 +40,8 @@
   border-left: 1px solid #efefef;
 }
 
-@keyframes play {
-  from 0%
-    transform: translate;
-  }
-  to { 
-    transform: translateY();
-  }
-}
-
 .photo__action {
   padding: 15px 15px;
-  animation: play is ease-out infinite;
 }
 
 .comment .comment_list {
@@ -87,4 +75,48 @@
 
 .list img {
   transition: all is;
+}
+
+.photo__actions .photo__action {
+  cursor: pointer;
+}
+
+.photo__actions .photo__action:first-child {
+  margin-right: 10px;
+}
+
+.photo__meta .photo__likes,
+.photo__comment .photo__comment-author {
+  font-weight: bold;
+}
+
+.photo__meta .photo__date {
+  font-size: 10px;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.photo__meta .photo__add-comment {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.photo__add-comment textarea {
+  width: 95%;
+  border: 0;
+  resize: none;
+  font-size: 12px;
+}
+
+.photo__add-comment textarea:focus {
+  outline: none;
+}
+
+.comment-date .comment__day {
+  font-size: 8px;
+  color: #ededed;
 }
